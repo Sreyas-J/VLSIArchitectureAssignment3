@@ -1,5 +1,4 @@
 module adder_tb();
-
     reg clk;
     reg [7:0] a, b;
     wire [7:0] sum;
@@ -36,5 +35,4 @@ module adder_tb();
     initial begin
         $monitor("Time: %0t | a: %d | b: %d | sum: %d | cout: %b", $time, a, b, sum, cout);
     end
-
 endmodule
