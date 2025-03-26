@@ -1,0 +1,116 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar 26 02:59:09 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.13-s082_1 (64bit) 11/13/2024 13:42 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.13-s082_1 NR241029-2256/23_13-UB (database version 18.20.652) {superthreading v2.20}
+#@(#)CDS: AAE 23.13-s019 (64bit) 11/13/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.13-s028_1 () Nov 11 2024 03:58:52 ( )
+#@(#)CDS: SYNTECH 23.13-s009_1 () Oct 30 2024 09:17:13 ( )
+#@(#)CDS: CPE v23.13-s062
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s235 (64bit) Fri Sep 27 22:21:33 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/dcmosimt2022552/Desktop/ShannonAdderGenus/AES/aes_new/files_rtl3gds/Cadence_design_database_45nm/Cadence_design_database_45nm/physical_design/adder_placed.dat adder
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+zoomBox -4.50200 -3.63550 75.26950 36.80200
+zoomOut
+zoomBox -32.55950 -10.61050 73.62600 43.21650
+zoomBox -11.75500 1.66850 43.67550 29.76700
+zoomBox -15.90250 -0.41400 49.31050 32.64350
+zoomBox -20.79550 -2.86400 55.92650 36.02750
+zoomBox -15.77150 -0.86450 49.44250 32.19350
+timeDesign -preCTS
+optDesign -preCTS
+report_timing
+timeDesign -preCTS
+set_ccopt_property buffer_cells {CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8}
+ccopt_design
+set_ccopt_property target_max_trans 0.1
+ccopt_design
+set_ccopt_property buffer_cells {CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8}
+ccopt_design
+set_ccopt_property buffer_cells {CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8}
+set_ccopt_property target_max_trans 0.1
+ccopt_design
+clock_opt_design
+set_ccopt_property target_max_trans 0.1
+set_ccopt_property buffer_cells {CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8}
+ccopt_design
+ctd_win
+timeDesign -postCTS
+report_timing
+report_timing > timing_postCTS.txt
+getDesignMode -user -bottomRoutingLayer
+getDesignMode -user -topRoutingLayer
+getDesignMode -user -bottomRoutingLayer
+getDesignMode -user -topRoutingLayer
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+getDesignMode -quiet -topRoutingLayer
+getDesignMode -quiet -bottomRoutingLayer
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+zoomBox -3.28850 5.17100 30.75450 22.42800
+zoomBox 4.29450 8.83700 19.40050 16.49450
+zoomBox 7.56800 10.70800 15.45400 14.70550
+selectWire 11.6600 12.7850 11.7400 14.7650 2 {a[7]}
+is_innovus_plus
+zoomBox 0.84350 7.44400 18.61700 16.45350
+zoomBox -3.79900 5.19050 20.80100 17.66050
+zoomBox -19.11900 -2.24600 28.00700 21.64300
+zoomBox -72.05100 -27.94000 52.90450 35.40200
+zoomBox -57.33200 -18.91250 48.88100 34.92850
+zoomBox -44.81050 -11.23900 45.47050 34.52600
+zoomBox -17.15000 -1.24850 29.97850 22.64150
+zoomBox -36.13200 -8.10450 40.60900 30.79650
+report_timing > timing_postRoute.txt
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report adder.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -type all -geomConnect -error 1000 -warning 50
+setAnalysisMode -analysisType onChipVariation
+timeDesign -postRoute
+extractRC
+setAnalysisMode -analysisType onChipVariation
+timeDesign -postRoute
+extractRC
+rcOut -spef report/new
+rcOut -spef report/new_parasitics.spef
+streamOut adder_gds -libName DesignLib -structureName adder -units 2000 -mode ALL
+zoomBox -25.09850 -2.66400 40.13150 30.40200
+report_power > powerReport.txt
+report_area > areaReport.txt

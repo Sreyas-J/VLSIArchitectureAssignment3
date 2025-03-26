@@ -1,0 +1,29 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.10-p002_1, built Fri Aug 20 07:13:13 PDT 2021
+Options: -legacy_ui 
+Date:    Wed Mar 26 08:23:15 2025
+Host:    cadencea16 (x86_64 w/Linux 4.18.0-305.el8.x86_64) (16cores*24cpus*1physical cpu*12th Gen Intel(R) Core(TM) i9-12900K 30720KB) (65516972KB)
+PID:     69717
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/8F7AA1E8ED420CDB8796
+	License file: 5280@172.16.201.225
+	License Server: 5280@172.16.201.225
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+WARNING: This version of the tool is 1313 days old.
+legacy_genus:/> exit
+Normal exit.

@@ -1,0 +1,91 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Mar 26 09:50:54 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v23.13-s082_1 (64bit) 11/13/2024 13:42 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 23.13-s082_1 NR241029-2256/23_13-UB (database version 18.20.652) {superthreading v2.20}
+#@(#)CDS: AAE 23.13-s019 (64bit) 11/13/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 23.13-s028_1 () Nov 11 2024 03:58:52 ( )
+#@(#)CDS: SYNTECH 23.13-s009_1 () Oct 30 2024 09:17:13 ( )
+#@(#)CDS: CPE v23.13-s062
+#@(#)CDS: IQuantus/TQuantus 23.1.1-s235 (64bit) Fri Sep 27 22:21:33 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/dcmosimt2022552/Desktop/ShannonAdderGenus/AES/aes_new/files_rtl3gds/Cadence_design_database_45nm/Cadence_design_database_45nm/physical_design/adder_placed.dat adder
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+setDrawView place
+setDrawView fplan
+report_timing
+zoomBox -6.59750 0.87150 40.71350 24.85400
+zoomBox -13.57100 -0.09250 42.08900 28.12250
+zoomBox -21.62750 -0.74200 43.85500 32.45200
+zoomBox -13.57100 -0.09250 42.08900 28.12250
+optDesign -preCTS
+report_timing
+set_ccopt_property buffer_cells {CLKBUFX2 CLKBUFX20 CLKBUFX3 CLKBUFX8 CLKBUFX12 CLKBUFX4 CLKBUFX6 CLKBUFX16}
+clock_opt_design
+report_timing
+getDesignMode -user -bottomRoutingLayer
+getDesignMode -user -topRoutingLayer
+setNanoRouteMode -quiet -drouteFixAntenna 1
+setNanoRouteMode -quiet -routeInsertAntennaDiode 0
+setNanoRouteMode -quiet -routeWithTimingDriven 0
+setNanoRouteMode -quiet -routeWithEco 0
+setNanoRouteMode -quiet -routeWithLithoDriven 0
+setNanoRouteMode -quiet -droutePostRouteLithoRepair 0
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -drouteAutoStop 0
+setNanoRouteMode -quiet -routeSelectedNetOnly 0
+getDesignMode -quiet -topRoutingLayer
+getDesignMode -quiet -bottomRoutingLayer
+setNanoRouteMode -quiet -drouteEndIteration 1
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+report_timing
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report adder.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -type all -geomConnect -error 1000 -warning 50
+report_timing
+saveDesign adder_postroute
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report adder.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+report_timing > timingPostRoute.rpt
+report_area > areaPostRoute.rpt
+report_power > powerPostRoute.rpt

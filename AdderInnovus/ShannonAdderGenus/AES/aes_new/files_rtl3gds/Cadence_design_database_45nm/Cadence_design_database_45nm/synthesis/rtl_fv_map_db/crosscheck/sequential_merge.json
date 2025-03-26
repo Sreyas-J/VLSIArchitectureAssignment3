@@ -1,0 +1,1321 @@
+{
+ "filetype": "conformal-table",
+ "data": [
+  {
+   "Object": "/K2_reg[3]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[2]",
+   "LEC representative": "/K1_reg[2]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[4]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[3]",
+   "LEC representative": "/K1_reg[3]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[5]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[4]",
+   "LEC representative": "/K1_reg[4]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[6]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[5]",
+   "LEC representative": "/K1_reg[5]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[8]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[7]",
+   "LEC representative": "/K1_reg[7]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[9]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[8]",
+   "LEC representative": "/K1_reg[8]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[10]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[9]",
+   "LEC representative": "/K1_reg[9]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[11]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[10]",
+   "LEC representative": "/K1_reg[10]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[12]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[11]",
+   "LEC representative": "/K1_reg[11]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[13]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[12]",
+   "LEC representative": "/K1_reg[12]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[14]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[13]",
+   "LEC representative": "/K1_reg[13]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[15]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[14]",
+   "LEC representative": "/K1_reg[14]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[16]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[15]",
+   "LEC representative": "/K1_reg[15]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[17]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[16]",
+   "LEC representative": "/K1_reg[16]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[18]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[17]",
+   "LEC representative": "/K1_reg[17]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[19]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[18]",
+   "LEC representative": "/K1_reg[18]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[20]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[19]",
+   "LEC representative": "/K1_reg[19]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[21]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[20]",
+   "LEC representative": "/K1_reg[20]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[22]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[21]",
+   "LEC representative": "/K1_reg[21]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[23]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[22]",
+   "LEC representative": "/K1_reg[22]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[24]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[23]",
+   "LEC representative": "/K1_reg[23]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[25]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[24]",
+   "LEC representative": "/K1_reg[24]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[26]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[25]",
+   "LEC representative": "/K1_reg[25]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[27]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[26]",
+   "LEC representative": "/K1_reg[26]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[28]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[27]",
+   "LEC representative": "/K1_reg[27]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[29]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[28]",
+   "LEC representative": "/K1_reg[28]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[30]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[29]",
+   "LEC representative": "/K1_reg[29]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[31]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[30]",
+   "LEC representative": "/K1_reg[30]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[32]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[31]",
+   "LEC representative": "/K1_reg[31]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[33]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[32]",
+   "LEC representative": "/K1_reg[32]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[34]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[33]",
+   "LEC representative": "/K1_reg[33]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[35]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[34]",
+   "LEC representative": "/K1_reg[34]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[36]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[35]",
+   "LEC representative": "/K1_reg[35]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[37]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[36]",
+   "LEC representative": "/K1_reg[36]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[38]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[37]",
+   "LEC representative": "/K1_reg[37]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[39]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[38]",
+   "LEC representative": "/K1_reg[38]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[40]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[39]",
+   "LEC representative": "/K1_reg[39]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[41]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[40]",
+   "LEC representative": "/K1_reg[40]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[42]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[41]",
+   "LEC representative": "/K1_reg[41]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[43]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[42]",
+   "LEC representative": "/K1_reg[42]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[44]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[43]",
+   "LEC representative": "/K1_reg[43]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[45]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[44]",
+   "LEC representative": "/K1_reg[44]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[46]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[45]",
+   "LEC representative": "/K1_reg[45]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[47]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[46]",
+   "LEC representative": "/K1_reg[46]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[48]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[47]",
+   "LEC representative": "/K1_reg[47]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[49]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[48]",
+   "LEC representative": "/K1_reg[48]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[50]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[49]",
+   "LEC representative": "/K1_reg[49]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[51]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[50]",
+   "LEC representative": "/K1_reg[50]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[52]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[51]",
+   "LEC representative": "/K1_reg[51]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[53]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[52]",
+   "LEC representative": "/K1_reg[52]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[54]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[53]",
+   "LEC representative": "/K1_reg[53]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[55]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[54]",
+   "LEC representative": "/K1_reg[54]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[56]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[55]",
+   "LEC representative": "/K1_reg[55]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[57]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[56]",
+   "LEC representative": "/K1_reg[56]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[58]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[57]",
+   "LEC representative": "/K1_reg[57]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[59]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[58]",
+   "LEC representative": "/K1_reg[58]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[60]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[59]",
+   "LEC representative": "/K1_reg[59]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[61]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[60]",
+   "LEC representative": "/K1_reg[60]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[62]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[61]",
+   "LEC representative": "/K1_reg[61]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[63]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[62]",
+   "LEC representative": "/K1_reg[62]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[64]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[63]",
+   "LEC representative": "/K1_reg[63]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[65]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[64]",
+   "LEC representative": "/K1_reg[64]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[66]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[65]",
+   "LEC representative": "/K1_reg[65]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[67]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[66]",
+   "LEC representative": "/K1_reg[66]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[68]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[67]",
+   "LEC representative": "/K1_reg[67]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[69]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[68]",
+   "LEC representative": "/K1_reg[68]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[70]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[69]",
+   "LEC representative": "/K1_reg[69]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[71]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[70]",
+   "LEC representative": "/K1_reg[70]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[72]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[71]",
+   "LEC representative": "/K1_reg[71]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[73]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[72]",
+   "LEC representative": "/K1_reg[72]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[74]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[73]",
+   "LEC representative": "/K1_reg[73]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[75]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[74]",
+   "LEC representative": "/K1_reg[74]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[76]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[75]",
+   "LEC representative": "/K1_reg[75]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[77]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[76]",
+   "LEC representative": "/K1_reg[76]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[78]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[77]",
+   "LEC representative": "/K1_reg[77]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[79]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[78]",
+   "LEC representative": "/K1_reg[78]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[80]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[79]",
+   "LEC representative": "/K1_reg[79]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[81]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[80]",
+   "LEC representative": "/K1_reg[80]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[82]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[81]",
+   "LEC representative": "/K1_reg[81]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[83]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[82]",
+   "LEC representative": "/K1_reg[82]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[84]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[83]",
+   "LEC representative": "/K1_reg[83]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[85]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[84]",
+   "LEC representative": "/K1_reg[84]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[86]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[85]",
+   "LEC representative": "/K1_reg[85]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[87]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[86]",
+   "LEC representative": "/K1_reg[86]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[88]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[87]",
+   "LEC representative": "/K1_reg[87]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[89]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[88]",
+   "LEC representative": "/K1_reg[88]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[90]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[89]",
+   "LEC representative": "/K1_reg[89]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[91]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[90]",
+   "LEC representative": "/K1_reg[90]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[92]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[91]",
+   "LEC representative": "/K1_reg[91]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[93]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[92]",
+   "LEC representative": "/K1_reg[92]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[94]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[93]",
+   "LEC representative": "/K1_reg[93]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[95]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[94]",
+   "LEC representative": "/K1_reg[94]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[96]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[95]",
+   "LEC representative": "/K1_reg[95]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[97]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[96]",
+   "LEC representative": "/K1_reg[96]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[98]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[97]",
+   "LEC representative": "/K1_reg[97]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[99]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[98]",
+   "LEC representative": "/K1_reg[98]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[100]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[99]",
+   "LEC representative": "/K1_reg[99]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[101]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[100]",
+   "LEC representative": "/K1_reg[100]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[102]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[101]",
+   "LEC representative": "/K1_reg[101]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[103]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[102]",
+   "LEC representative": "/K1_reg[102]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[104]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[103]",
+   "LEC representative": "/K1_reg[103]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[105]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[104]",
+   "LEC representative": "/K1_reg[104]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[106]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[105]",
+   "LEC representative": "/K1_reg[105]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[107]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[106]",
+   "LEC representative": "/K1_reg[106]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[108]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[107]",
+   "LEC representative": "/K1_reg[107]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[109]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[108]",
+   "LEC representative": "/K1_reg[108]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[110]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[109]",
+   "LEC representative": "/K1_reg[109]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[111]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[110]",
+   "LEC representative": "/K1_reg[110]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[112]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[111]",
+   "LEC representative": "/K1_reg[111]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[113]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[112]",
+   "LEC representative": "/K1_reg[112]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[114]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[113]",
+   "LEC representative": "/K1_reg[113]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[115]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[114]",
+   "LEC representative": "/K1_reg[114]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[116]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[115]",
+   "LEC representative": "/K1_reg[115]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[117]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[116]",
+   "LEC representative": "/K1_reg[116]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[118]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[117]",
+   "LEC representative": "/K1_reg[117]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[119]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[118]",
+   "LEC representative": "/K1_reg[118]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[120]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[119]",
+   "LEC representative": "/K1_reg[119]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[121]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[120]",
+   "LEC representative": "/K1_reg[120]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[122]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[121]",
+   "LEC representative": "/K1_reg[121]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[123]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[122]",
+   "LEC representative": "/K1_reg[122]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[124]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[123]",
+   "LEC representative": "/K1_reg[123]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[125]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[124]",
+   "LEC representative": "/K1_reg[124]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[126]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[125]",
+   "LEC representative": "/K1_reg[125]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[127]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[126]",
+   "LEC representative": "/K1_reg[126]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/K2_reg[0]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/K1_reg[127]",
+   "LEC representative": "/K1_reg[127]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/inst1/key_reg[38]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/inst1_key_reg[23]",
+   "LEC representative": "/inst1/key_reg[23]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/inst1/key_reg[70]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/inst1_key_reg[55]",
+   "LEC representative": "/inst1/key_reg[55]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/inst1/key_reg[121]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/inst1_key_reg[106]",
+   "LEC representative": "/inst1/key_reg[106]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  },
+  {
+   "Object": "/inst1/key_reg[102]",
+   "Type": "DFF",
+   "Design": "G",
+   "User Setup representative": "/inst1_key_reg[87]",
+   "LEC representative": "/inst1/key_reg[87]",
+   "User Setup phase": "+",
+   "LEC phase": "+",
+   "highlite": 0
+  }
+ ],
+ "cols": [
+  {
+   "key": "Object"
+  },
+  {
+   "key": "Type"
+  },
+  {
+   "key": "Design"
+  },
+  {
+   "key": "User Setup representative"
+  },
+  {
+   "key": "LEC representative"
+  },
+  {
+   "key": "User Setup phase"
+  },
+  {
+   "key": "LEC phase"
+  }
+ ],
+ "sort": [
+  "-highlite"
+ ]
+}

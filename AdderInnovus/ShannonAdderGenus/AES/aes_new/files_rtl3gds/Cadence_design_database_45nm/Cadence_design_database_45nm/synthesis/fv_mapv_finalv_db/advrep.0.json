@@ -1,0 +1,3 @@
+[{"object": {"name": "lec_run"}, "lec": "21.10-s300 (22-Aug-2021) (64 bit executable)", "pid": "657973"},
+{"Total_DesignSize": "65", "Inout_count": "0", "Output_count": "9", "object": {"OBJID": "0", "NAME": "adder", "DESIGN": "golden"}, "DESFILE": "1", "LIBFILE": "1", "Input_count": "17", "Root_name": "adder", "Total_Hierachies": "2", "Design_search_path": ["."]},
+{"Total_DesignSize": "65", "Inout_count": "0", "Output_count": "9", "object": {"OBJID": "1", "NAME": "adder", "DESIGN": "revised"}, "DESFILE": "1", "LIBFILE": "0", "Input_count": "17", "Root_name": "adder", "Total_Hierachies": "2", "Design_search_path": ["."]}]

@@ -1,0 +1,733 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 21.10-p002_1, built Fri Aug 20 07:13:13 PDT 2021
+Options: -legacy_ui 
+Date:    Thu Feb 13 03:39:59 2025
+Host:    cadencea16 (x86_64 w/Linux 4.18.0-305.el8.x86_64) (16cores*24cpus*1physical cpu*12th Gen Intel(R) Core(TM) i9-12900K 30720KB) (65516972KB)
+PID:     2019888
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checkout succeeded: Genus_Synthesis/8F7AA1E8ED420CDB8796
+	License file: 5280@172.16.201.225
+	License Server: 5280@172.16.201.225
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (3 seconds elapsed).
+
+WARNING: This version of the tool is 1272 days old.
+legacy_genus:/> source genus_scripts.tcl
+Sourcing './genus_scripts.tcl' (Thu Feb 13 03:40:20 EST 2025)...
+  Setting attribute of root '/': 'init_lib_search_path' = ../lib/
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'hdl_search_path', object type: 'root'
+        : Attribute 'hdl_search_path' is going to be obsoleted, use the new attribute 'init_hdl_search_path'.
+  Setting attribute of root '/': 'hdl_search_path' = ../rtl/
+
+Threads Configured:3
+
+  Message Summary for Library slow_vdd1v0_basicCells.lib:
+  *******************************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  *******************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+  Setting attribute of root '/': 'library' = slow_vdd1v0_basicCells.lib
+    reg compute = 1'b0;
+                      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial value assignment to reg in file '../rtl/aes.v' on line 25, column 23.
+        : For example, the following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+  Library has 324 usable logic and 128 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'AES_CMAC' from file '../rtl/aes.v'.
+Warning : Using default parameter value for module elaboration. [CDFG-818]
+        : Elaborating block 'AES_CMAC' with default parameters value.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'tag' in module 'AES_CMAC' in file '../rtl/aes.v' on line 58.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'AES_CMAC'.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'encryptRound' from file '../rtl/aes.v'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'encryptRound'.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'ram' from file '../rtl/aes.v'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][0]' in module 'ram'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][1]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][2]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][3]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][4]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][5]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][6]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][7]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][8]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][9]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][10]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][11]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][12]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][13]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][14]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][15]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][16]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][17]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][18]' in module 'ram'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'ram[0][19]' in module 'ram'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'ram'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: AES_CMAC, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: AES_CMAC, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.001s)
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: encryptRound, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: encryptRound, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Rejected mux_ram[addrb]_1008_23 : has multidriven pins.
+
+Rejected mux_ram[addra]_1002_23 : has multidriven pins.
+
+Completed Unified Mux Engine Tricks
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         3.00 | 
+--------------------------------------------------------
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: ram, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.008s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: ram, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.003s)
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '5' of the SDC file '../constraints/constraints_top.sdc'  cannot find any ports named 'rst'
+        : Use get_* commands to find the objects along with a wild card entry in the name of the object to check if the object is existing with different naming style.
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept empty ports lists
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '5' of the SDC file '../constraints/constraints_top.sdc': set_input_delay -max 1.0 [get_ports 'rst'] -clock [get_clocks 'clk'].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '6' of the SDC file '../constraints/constraints_top.sdc'  cannot find any ports named 'count'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '6' of the SDC file '../constraints/constraints_top.sdc': set_output_delay -max 1.0 [get_ports 'count'] -clock [get_clocks 'clk'].
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      4 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      2 (runtime  0.00)
+ "set_clock_transition"     - successful      2 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      0 , failed      1 (runtime  0.00)
+ "set_output_delay"         - successful      0 , failed      1 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 4
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+read_sdc completed in 00:00:00 (hh:mm:ss)
+  Setting attribute of root '/': 'syn_generic_effort' = high
+##Generic Timing Info for library domain: _default_ typical gate delay: 127.6 ps std_slew: 17.9 ps std_load: 1.0 fF
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: AES_CMAC, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 1 hierarchical instance.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 16 hierarchical instances.
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'AES_CMAC' to generic gates using 'high' effort.
+PBS_Generic-Start - Elapsed_Time 0, CPU_Time 0.0
+stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
+
+  Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+ 00:00:12(00:00:27) |  00:00:00(00:00:00) |   0.0(  0.0) |    3:40:28 (Feb13) |   1.03 GB | PBS_Generic-Start
+--------------------+---------------------+--------------+--------------------+-----------+----------------------
+Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
+Info: (*N*) indicates data that was populated from previously saved time_info database
+Info: CPU time includes time of parent + longest thread
+TNS Restructuring config: no_value at stage: generic applied.
+Info    : Partition Based Synthesis execution skipped. [PHYS-752]
+        : Design size is less than the partition size '100000' for distributed generic optimization to kick in.
+Starting mux data reorder optimization [v1.0] (stage: pre_to_gen_setup, startdef: AES_CMAC, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.014s)
+Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: AES_CMAC, recur: true)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------
+| Trick | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------
+--------------------------------------------
+Starting datapath recasting [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed datapath recasting (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting infer macro optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed infer macro optimization (accepts: 0, rejects: 8, runtime: 0.062s)
+Starting decode mux sandwich optimization [v2.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed decode mux sandwich optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting decode mux optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed decode mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chop wide muxes [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed chop wide muxes (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.004s)
+Starting priority mux optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed priority mux optimization (accepts: 0, rejects: 0, runtime: 1.235s)
+Starting constant-data mux optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed constant-data mux optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting chain-to-tree inequality transform [v2.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed chain-to-tree inequality transform (accepts: 0, rejects: 0, runtime: 0.070s)
+Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.002s)
+Starting common select mux optimization [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed common select mux optimization (accepts: 0, rejects: 0, runtime: 0.007s)
+Starting identity transform [v3.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed identity transform (accepts: 0, rejects: 0, runtime: 0.016s)
+Starting reduce operator chain [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed reduce operator chain (accepts: 0, rejects: 0, runtime: 0.001s)
+Starting common data mux cascade opt [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed common data mux cascade opt (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting mux input consolidation [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed mux input consolidation (accepts: 0, rejects: 0, runtime: 0.004s)
+Starting optimize datapath elements [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed optimize datapath elements (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed clip mux common data inputs (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip the non-user hierarchies [v2.0] (stage: pre_rtlopt, startdef: AES_CMAC, recur: true)
+Completed clip the non-user hierarchies (accepts: 0, rejects: 0, runtime: 0.000s)
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+--------------------------------------------------
+| Trick       | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------
+| ume_runtime |       0 |       0 |         0.00 | 
+--------------------------------------------------
+Number of big hc bmuxes before = 0
+Number of non-ctl's : 1
+subwordx_400_7_I1:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_11, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_11.
+Number of non-ctl's : 1
+subwordx_400_7_I1:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_400, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_400.
+Number of non-ctl's : 1
+subwordx_400_7_I1:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_402, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_402.
+Number of non-ctl's : 1
+subwordx_400_7_I1:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_404, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_404.
+Number of non-ctl's : 1
+subwordx_400_7_I5:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_406, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_406.
+Number of non-ctl's : 1
+subwordx_400_7_I5:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_408, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_408.
+Number of non-ctl's : 1
+subwordx_400_7_I5:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_410, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_410.
+Number of non-ctl's : 1
+subwordx_400_7_I5:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_412, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_412.
+Number of non-ctl's : 1
+subwordx_400_7_I9:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_414, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_414.
+Number of non-ctl's : 1
+subwordx_400_7_I9:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_416, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_416.
+Number of non-ctl's : 1
+subwordx_400_7_I9:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_418, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_418.
+Number of non-ctl's : 1
+subwordx_400_7_I9:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_420, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_420.
+Number of non-ctl's : 1
+subwordx_400_7_I13:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_422, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_422.
+Number of non-ctl's : 1
+subwordx_400_7_I13:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_424, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_424.
+Number of non-ctl's : 1
+subwordx_400_7_I13:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_426, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_426.
+Number of non-ctl's : 1
+subwordx_400_7_I13:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_428, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_428.
+Number of non-ctl's : 1
+subwordx_400_7_I17:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_430, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_430.
+Number of non-ctl's : 1
+subwordx_400_7_I17:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_432, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_432.
+Number of non-ctl's : 1
+subwordx_400_7_I17:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_434, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_434.
+Number of non-ctl's : 1
+subwordx_400_7_I17:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_436, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_436.
+Number of non-ctl's : 1
+subwordx_400_7_I21:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_438, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_438.
+Number of non-ctl's : 1
+subwordx_400_7_I21:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_440, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_440.
+Number of non-ctl's : 1
+subwordx_400_7_I21:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_442, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_442.
+Number of non-ctl's : 1
+subwordx_400_7_I21:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_444, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_444.
+Number of non-ctl's : 1
+subwordx_400_7_I25:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_446, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_446.
+Number of non-ctl's : 1
+subwordx_400_7_I25:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_448, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_448.
+Number of non-ctl's : 1
+subwordx_400_7_I25:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_450, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_450.
+Number of non-ctl's : 1
+subwordx_400_7_I25:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_452, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_452.
+Number of non-ctl's : 1
+subwordx_400_7_I29:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_454, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_454.
+Number of non-ctl's : 1
+subwordx_400_7_I29:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_456, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_456.
+Number of non-ctl's : 1
+subwordx_400_7_I29:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_458, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_458.
+Number of non-ctl's : 1
+subwordx_400_7_I29:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_460, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_460.
+Number of non-ctl's : 1
+subwordx_400_7_I33:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_462, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_462.
+Number of non-ctl's : 1
+subwordx_400_7_I33:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_464, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_464.
+Number of non-ctl's : 1
+subwordx_400_7_I33:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_466, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_466.
+Number of non-ctl's : 1
+subwordx_400_7_I33:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_468, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_468.
+Number of non-ctl's : 1
+subwordx_400_7_I37:c_427_15:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_470, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_470.
+Number of non-ctl's : 1
+subwordx_400_7_I37:c_428_16:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_472, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_472.
+Number of non-ctl's : 1
+subwordx_400_7_I37:c_429_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_474, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_474.
+Number of non-ctl's : 1
+subwordx_400_7_I37:c_430_17:mux_c_436_11 
+SOP DEBUG : Module= keyExpansion, Cluster= ctl_a_436_476, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_436_476.
+Number of non-ctl's : 1
+mux_c_728_11 
+SOP DEBUG : Module= sbox, Cluster= ctl_a_728_11, ctl= 1, Non-ctl= 1
+Selected impl_type 0 (ctl + 1-hot mux form) for sop cluster ctl_a_728_11.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : Pre-processing optimizations applied to datapath logic in 'AES_CMAC':
+          sop(41) 
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'AES_CMAC'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_0_1'
+CSAGen Prep Share:0 Re-Write:0 Speculation: 0
+CDN_DP_region_0_1 level = 0 loads = 0 drivers = 0
+CDN_DP_region_0_1_c0 in AES_CMAC: area: 5516108450 ,dp = 64 mux = 18 sg = slow         worst_clk_period: -4592028935095457943685366656458477049139426289534278904031380676065855492477960205618511858929779986172086041202652336773535388953106677313149046248640035433686190113713133483681816560122045141042477044651583561827668310257889548624380826237899115560832068045744731304350449664.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ skipped
+CDN_DP_region_0_1_c1 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = fast         worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_1_c2 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_slow    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_1_c3 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_1_c4 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_1_c5 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_1_c6 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+Not considering config 7 due to bailout. 
+Best config: CDN_DP_region_0_1_c6 in AES_CMAC: area: 5430690850 ,dp = 0 mux = 18 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+  Smallest config area : 5430690850.  Fastest config wns;  0
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Summary table of configs (Best config is CDN_DP_region_0_1_c6)
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>                     0                  1                  2                  3                  4                  5                  6                  7            
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>           Area       5516108450         5430690850         5430690850         5430690850         5430690850         5430690850         5430690850         5516108450  
+##>            WNS         +8396.60           +8396.60           +8396.60           +8396.60           +8396.60           +8396.60           +8396.60           +8323.40  
+##>            TNS                0                  0                  0                  0                  0                  0                  0                  0  
+##>    Num Rewrite                0                  0                  0                  0                  0                  0                  0                  0  
+##>     Num Factor                0                  0                  0                  0                  0                  0                  0                  0  
+##>      Num Share                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num CmultCse                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num Downsize                0                  0                  0                  0                  0                  0                  0                  0  
+##>  Num Speculate                0                  0                  0                  0                  0                  0                  0                  0  
+##>     Runtime(s)                0                  0                  0                  0                  0                  0                  0                  0  
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>
+##>
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Optimization Step DEBUG Table for config CDN_DP_region_0_1_c6
+##>
+##>                          Step                        Area   ( % Chg)        WNS (Change)        TNS (Change)          Runtime (s)        Comment                   
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>createMaxCarrySave              START             5516108450 (      )    107382579.00 (        )             0 (        )              
+##> datapath_rewrite_one_def       START             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)              
+##>  fast_cse_elim                 START             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)           0  
+##>                                  END             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)           0  
+##> dpopt_share_one_def            START             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    107382579.00 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START             5516108450 ( +0.00)    214748364.70 (+107365785.70)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5516108450 ( +0.00)    214748364.70 (+107365785.70)             0 (       0)           0  
+##>canonicalize_by_names           START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_csa_one_  START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_csa_factoring_one_gde  START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dpopt_share_one_def             START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_share     START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dp_combine_const_mult_with_com  START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>speculate_in_gdef               START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##> pre_speculate_mux_merge        START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dp_operator_level_decompositio  START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>selective_flatten_dp_config     START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>createMaxCarrySave              START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##> datapath_rewrite_one_def       START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>  fast_cse_elim                 START             5516108450 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( -1.55)    214748364.70 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5430690850 ( -1.55)    214748364.70 (   +0.00)             0 (       0)           0  
+##> dpopt_share_one_def            START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5430690850 ( -1.55)    214748364.70 (   +0.00)             0 (       0)           0  
+##>context_based_simplify          START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>group_csa_final_adder_dp        START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dpopt_flatten_critical_muxes_i  START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>speculate_in_gdef               START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##> pre_speculate_mux_merge        START             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5430690850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>create_score                    START             5430690850 ( +0.00)     8396.60 (-214739968.10)             0 (       0)              
+##>                                  END             5430690850 ( +0.00)     8396.60 (   +0.00)             0 (       0)           0  
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Committed config: CDN_DP_region_0_1_c6
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 6 for module 'CDN_DP_region_0_1'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_0_2'
+CSAGen Prep Share:0 Re-Write:1 Speculation: 0
+MaxCSA: Successfully built Maximal CSA Expression Expr0
+CDN_DP_region_0_2 level = 0 loads = 0 drivers = 0
+CDN_DP_region_0_2_c0 in AES_CMAC: area: 5971224100 ,dp = 11 mux = 5 sg = slow         worst_clk_period: -4592024818112686007544091371623043813004152832110781083474987530434548819765321140516579626654680392906110065126800729164270879694187219469955113378228855615075034128434092163310164542077600748578610244716643515416258676369934689095608681774610783372403276652660868448931282944.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ skipped
+CDN_DP_region_0_2_c1 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = fast         worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c2 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_slow    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  2.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c3 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c4 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c5 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c6 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  -4592024818112433113055924603578228318651716124256742338751951980258966042238682008328026490274505403588076146579749829674463417221587339140951942891348252576336617666282264024448754698538468265274983540509300229088506558789349756896355470694762073915775119587644729501520232448.0000   tns_sense_num: 0
+ is current best
+CDN_DP_region_0_2_c7 in AES_CMAC: area: 5965885500 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  0.0000   tns_sense_num: 0
+
+Best config: CDN_DP_region_0_2_c6 in AES_CMAC: area: 5517443100 ,dp = 6 mux = 4 sg = very_fast    worst_clk_period: 0.0000 
+    wns: 0  norm_wns:  0.0000 
+    fail_endp: 0 
+    tns:  0  tns_per_endp:  0.0000   norm_tns_per_endp:  0.0000 
+    tns_sense_max:  0.0000  tns_sense_avg:  -4592024818112433113055924603578228318651716124256742338751951980258966042238682008328026490274505403588076146579749829674463417221587339140951942891348252576336617666282264024448754698538468265274983540509300229088506558789349756896355470694762073915775119587644729501520232448.0000   tns_sense_num: 0
+  Smallest config area : 5517443100.  Fastest config wns;  0
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Summary table of configs (Best config is CDN_DP_region_0_2_c6)
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>                     0                  1                  2                  3                  4                  5                  6                  7            
+##>+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>           Area       5971224100         5517443100         5517443100         5517443100         5517443100         5517443100         5517443100         5965885500  
+##>            WNS         +7422.50           +7422.50           +7422.50           +7422.50           +7422.50           +7422.50           +7422.50           +7422.50  
+##>            TNS                0                  0                  0                  0                  0                  0                  0                  0  
+##>    Num Rewrite                0                  1                  1                  1                  1                  1                  1                  2  
+##>     Num Factor                0                  0                  0                  0                  0                  0                  0                  0  
+##>      Num Share                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num CmultCse                0                  0                  0                  0                  0                  0                  0                  0  
+##>   Num Downsize                0                  0                  0                  0                  0                  0                  0                  0  
+##>  Num Speculate                0                  0                  0                  0                  0                  0                  0                  0  
+##>     Runtime(s)                0                  0                  0                  0                  0                  0                  0                  1  
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>
+##>
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>Optimization Step DEBUG Table for config CDN_DP_region_0_2_c6
+##>
+##>                          Step                        Area   ( % Chg)        WNS (Change)        TNS (Change)          Runtime (s)        Comment                   
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+##>createMaxCarrySave              START             5971224100 (      )    107381604.90 (        )             0 (        )              
+##> datapath_rewrite_one_def       START             5971224100 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              
+##>  fast_cse_elim                 START             5971224100 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              
+##>                                  END             5963216200 ( -0.13)    107381604.90 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START             5963216200 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              
+##>                                  END             5963216200 ( +0.00)    107381604.90 (   +0.00)             0 (       0)           0  
+##>  rewrite                       START             5963216200 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              (a,csaa) dissolve_1bit_const_2x1mux_from --> dissolve_1bit_const_2x1mux_to
+##>                                  END             5959212250 ( -0.07)    107381604.90 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START             5959212250 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              
+##>                                  END             5957877600 ( -0.02)    107381604.90 (   +0.00)             0 (       0)           0  
+##>                                  END             5957877600 ( -0.22)    107381604.90 (   +0.00)             0 (       0)           0  
+##> dpopt_share_one_def            START             5957877600 ( +0.00)    107381604.90 (   +0.00)             0 (       0)              
+##>                                  END             5957877600 ( +0.00)    107381604.90 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START             5957877600 ( +0.00)    214748364.70 (+107366759.80)             0 (       0)              
+##>                                  END             6044629850 ( +1.46)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             6044629850 ( +1.23)    214748364.70 (+107366759.80)             0 (       0)           0  
+##>canonicalize_by_names           START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_csa_one_  START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_csa_factoring_one_gde  START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dpopt_share_one_def             START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>datapath_rewrite_post_share     START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dp_combine_const_mult_with_com  START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dp_operator_level_decompositio  START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>selective_flatten_dp_config     START             6044629850 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             6037956600 ( -0.11)    214748364.70 (   +0.00)             0 (       0)           0  
+##>createMaxCarrySave              START             6037956600 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##> datapath_rewrite_one_def       START             6037956600 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>  fast_cse_elim                 START             6037956600 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5696286200 ( -5.66)    214748364.70 (   +0.00)             0 (       0)           0  
+##>  fast_cse_elim                 START             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5696286200 ( -5.66)    214748364.70 (   +0.00)             0 (       0)           0  
+##> dpopt_share_one_def            START             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##> csa_opto                       START             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5696286200 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>                                  END             5696286200 ( -5.66)    214748364.70 (   +0.00)             0 (       0)           0  
+##>context_based_simplify          START             5584175600 ( -1.97)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5517443100 ( -1.20)    214748364.70 (   +0.00)             0 (       0)           0  
+##>group_csa_final_adder_dp        START             5517443100 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5517443100 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>dpopt_flatten_critical_muxes_i  START             5517443100 ( +0.00)    214748364.70 (   +0.00)             0 (       0)              
+##>                                  END             5517443100 ( +0.00)    214748364.70 (   +0.00)             0 (       0)           0  
+##>create_score                    START             5517443100 ( +0.00)     7422.50 (-214740942.20)             0 (       0)              
+##>                                  END             5517443100 ( +0.00)     7422.50 (   +0.00)             0 (       0)           0  
+##>+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Committed config: CDN_DP_region_0_2_c6
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 6 for module 'CDN_DP_region_0_2'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(1), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_0_0'
+CSAGen Prep Share:0 Re-Write:0 Speculation: 0

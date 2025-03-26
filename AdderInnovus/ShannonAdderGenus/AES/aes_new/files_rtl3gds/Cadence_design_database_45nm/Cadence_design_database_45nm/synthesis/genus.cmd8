@@ -1,0 +1,19 @@
+# Cadence Genus(TM) Synthesis Solution, Version 21.10-p002_1, built Aug 20 2021 10:13:13
+
+# Date: Tue Mar 25 18:52:11 2025
+# Host: cadencea18 (x86_64 w/Linux 4.18.0-553.33.1.el8_10.x86_64) (16cores*24cpus*1physical cpu*12th Gen Intel(R) Core(TM) i9-12900K 30720KB)
+# OS:   Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+source genus_scripts.tcl
+source genus_scripts.tcl
+source genus_script_LEC_2step.tcl
+source genus_script_LEC_2step.tcl
+lec -lpgxl -nogui -64 -dofile fv_map_final.do
+source genus_script_LEC_2step.tcl
+lec -lpgxl -nogui -64 -dofile fv_map_final.do
+source genus_script_LEC_2step.tcl
+lec -lpgxl -nogui -64 -dofile fv_map_final.do
+clear
+source genus_script_LEC_2step.tcl
+lec -lpgxl -nogui -64 -dofile fv_map_final.do
+lec -lpgxl -nogui -64 -dofile fv_map_final.do
